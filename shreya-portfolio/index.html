@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreya Shrestha — Journalist</title>
+<meta name="description" content="Shreya Shrestha is a journalist at Nepal Connect and former correspondent at The Annapurna Express. Read her reporting on floods, festivals, politics and everyday life in Nepal.">
+<meta property="og:title" content="Shreya Shrestha — Journalist">
+<meta property="og:description" content="Reporting on floods, festivals, politics and everyday life in Nepal.">
+<meta property="og:image" content="assets/images/shreya.jpg">
+<meta name="theme-color" content="#F3EEFF">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23FF6FA5%22/><text x=%2250%22 y=%2268%22 font-size=%2252%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-family=%22Arial Rounded MT Bold,Arial%22 font-weight=%22bold%22>ss</text></svg>">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Shreya Shrestha","jobTitle":"Journalist",
+ "worksFor":{"@type":"NewsMediaOrganization","name":"Nepal Connect","url":"https://nepalconnect.world"},
+ "homeLocation":{"@type":"Place","name":"Bhaktapur, Nepal"},"email":"mailto:shreyastha421@gmail.com",
+ "sameAs":["https://www.linkedin.com/in/shreya-shrestha-7118722b6/","https://nepalconnect.world/author/shreya-shrestha","https://theannapurnaexpress.com/author/877/"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Colours — change these to restyle the whole site
+   ============================================================ */
+:root{
+  --bg:#F3EEFF;          /* page: soft lilac */
+  --surface:#FFFFFF;     /* cards */
+  --ink:#2A1B3D;         /* text + sticker outlines: plum */
+  --ink-soft:#5B4A70;    /* body copy */
+  --muted:#8A7BA0;       /* dates */
+  --pink:#FF6FA5;
+  --marigold:#FFB627;
+  --sky:#6EC1FF;
+  --mint:#3CCB9B;
+  --tomato:#FF7A59;
+  --lilac:#B69CFF;
+  --display:'Bricolage Grotesque', system-ui, sans-serif;
+  --body:'Nunito', system-ui, sans-serif;
+  --wrap:1160px;
+  --shadow:var(--ink);   /* sticker shadow */
+  --hl:color-mix(in srgb,#FFB627 40%,transparent);  /* menu highlight */
+  --hl-ink:inherit;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1D1430; --surface:#2A1F40; --ink:#F6F0FF; --ink-soft:#D3C8E6; --muted:#A496BC; --shadow:#0B0613; --hl:#B69CFF; --hl-ink:#2A1B3D;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1D1430; --surface:#2A1F40; --ink:#F6F0FF; --ink-soft:#D3C8E6; --muted:#A496BC; --shadow:#0B0613; --hl:#B69CFF; --hl-ink:#2A1B3D;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:12px}
+::selection{background:var(--marigold);color:#2A1B3D}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.05;letter-spacing:-.02em}
+
+/* Sticker = thick outline + solid offset shadow. Used for cards, buttons, chips. */
+.sticker{background:var(--surface);border:2.5px solid var(--ink);border-radius:26px;box-shadow:6px 6px 0 var(--shadow);transition:transform .18s ease,box-shadow .18s ease}
+a.sticker:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--shadow)}
+a.sticker:active{transform:translate(6px,6px);box-shadow:0 0 0 var(--shadow)}
+
+/* ===== Nav ===== */
+.nav{position:sticky;top:12px;z-index:40;margin-top:12px}
+.nav .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 8px 8px 20px;border-radius:999px}
+.logo{font-family:var(--display);font-weight:800;font-size:20px;display:flex;align-items:center;gap:8px}
+.logo i{width:14px;height:14px;border-radius:50%;background:var(--pink);box-shadow:10px 0 0 var(--marigold),20px 0 0 var(--sky);margin-right:22px}
+.nav ul{display:flex;gap:4px;list-style:none;align-items:center}
+.nav ul a{display:block;padding:8px 16px;border-radius:999px;font-weight:700;font-size:15px}
+.nav ul a:hover,.nav ul a.on{background:var(--hl);color:var(--hl-ink)}
+.theme-btn{width:40px;height:40px;border-radius:50%;border:2px solid var(--ink);background:var(--marigold);color:#2A1B3D;cursor:pointer;display:grid;place-items:center}
+.theme-btn svg{width:18px;height:18px}
+
+/* ===== Hero ===== */
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;padding:64px 0 56px}
+.hello{display:inline-block;font-weight:800;background:var(--mint);color:#10352A;border:2px solid var(--ink);border-radius:999px;padding:6px 16px;transform:rotate(-3deg);margin-bottom:20px}
+.hero h1{font-size:clamp(56px,9vw,120px);font-weight:800;letter-spacing:-.045em;line-height:.9}
+.hero .intro{font-size:clamp(18px,1.7vw,22px);color:var(--ink-soft);max-width:26em;margin-top:24px}
+.hero .intro b{color:var(--ink)}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:800;font-size:16px}
+.btn.pink{background:var(--pink);color:#2A1B3D}
+.btn.plain{background:var(--surface)}
+
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px}
+.stat{display:flex;align-items:baseline;gap:6px;padding:8px 16px;border-radius:999px;border:2px dashed var(--muted);font-weight:700;font-size:15px;color:var(--ink-soft);white-space:nowrap}
+.stat b{font-family:var(--display);font-size:22px;color:var(--ink)}
+.ico{width:18px;height:18px;flex-shrink:0}
+.nav ul a.cv-link{display:inline-flex;align-items:center;gap:6px;background:var(--pink);color:#2A1B3D;border:2px solid var(--ink);padding:7px 16px;margin-left:4px}
+.nav ul a.cv-link:hover{background:var(--marigold)}
+.nav ul a.cv-link .ico{width:16px;height:16px}
+.sub{font-size:24px;font-weight:700;margin:0 0 20px}
+.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:56px}
+.picks .card h3{font-size:22px}
+.outlet-name{font-weight:800;font-size:14px;color:var(--muted)}
+.picks{margin-bottom:0}
+
+/* the one big moment: photo blob + bubbles that pop in */
+.stage{position:relative;aspect-ratio:1/1;max-width:520px;width:100%;justify-self:center}
+.blob{position:absolute;inset:9%;border:3px solid var(--ink);border-radius:58% 42% 52% 48% / 46% 56% 44% 54%;overflow:hidden;background:var(--marigold);box-shadow:10px 10px 0 var(--shadow);animation:morph 14s ease-in-out infinite alternate}
+.blob img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+@keyframes morph{50%{border-radius:44% 56% 40% 60% / 58% 42% 58% 42%}100%{border-radius:52% 48% 60% 40% / 40% 60% 46% 54%}}
+.bub{position:absolute;display:grid;place-items:center;text-align:center;border:2.5px solid var(--ink);border-radius:50%;font-family:var(--display);font-weight:700;line-height:1.05;color:#2A1B3D;padding:8px;
+  opacity:0;transform:scale(.2);animation:pop .55s cubic-bezier(.3,1.6,.5,1) forwards,bob 6s ease-in-out infinite;animation-delay:var(--d),calc(var(--d) + .6s)}
+@keyframes pop{to{opacity:1;transform:scale(1)}}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -8px}}
+.bub.b1{width:112px;height:112px;background:var(--pink);top:2%;left:0;--d:.3s;font-size:17px}
+.bub.b2{width:92px;height:92px;background:var(--sky);top:4%;right:4%;--d:.45s;font-size:15px}
+.bub.b3{width:120px;height:120px;background:var(--marigold);bottom:4%;right:-2%;--d:.6s;font-size:18px}
+.bub.b4{width:96px;height:96px;background:var(--mint);bottom:8%;left:-1%;--d:.75s;font-size:15px}
+.bub.b5{width:56px;height:56px;background:var(--lilac);top:46%;right:-4%;--d:.9s}
+.bub.b6{width:36px;height:36px;background:var(--tomato);top:30%;left:4%;--d:1s}
+
+/* ===== Section heads ===== */
+section.block{padding:96px 0 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.head h2{font-size:clamp(36px,5vw,60px);font-weight:800}
+.head p{color:var(--ink-soft);max-width:34em;margin-top:10px}
+
+/* ===== About ===== */
+.about{display:grid;grid-template-columns:minmax(220px,340px) 1fr;gap:56px;align-items:center;margin-bottom:56px}
+.about h2{font-size:clamp(36px,5vw,60px);font-weight:800;margin-bottom:18px}
+.about p{color:var(--ink-soft);font-size:18px;max-width:34em}
+.about p+p{margin-top:14px}
+.polaroid{background:#fff;padding:14px 14px 0;border:2.5px solid var(--ink);border-radius:18px;box-shadow:8px 8px 0 var(--marigold),8px 8px 0 2.5px var(--ink);transform:rotate(-3deg);max-width:340px;justify-self:center}
+.polaroid img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 40%;border-radius:10px}
+.polaroid figcaption{font-weight:700;color:#5B4A70;text-align:center;padding:12px 4px 14px;font-size:15px}
+.outlet{display:inline-flex;align-items:center;gap:10px;font-weight:800;padding:10px 18px;border-radius:999px}
+
+/* ===== Nepal Connect ===== */
+.nc-top{display:grid;grid-template-columns:1.5fr 1fr;gap:28px}
+.nc-side{display:grid;gap:28px}
+.card{display:flex;flex-direction:column;overflow:hidden}
+.card .pic{position:relative;aspect-ratio:16/10;background:var(--c,var(--lilac));border-bottom:2.5px solid var(--ink);overflow:hidden}
+.card .pic img{width:100%;height:100%;object-fit:cover}
+.card.lead .pic{aspect-ratio:4/3}
+.nc-side .card{flex-direction:row}
+.nc-side .card .pic{aspect-ratio:auto;width:42%;flex-shrink:0;border-bottom:none;border-right:2.5px solid var(--ink)}
+.card .txt{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:24px;font-weight:700}
+.card.lead h3{font-size:clamp(28px,3.2vw,40px)}
+.card .ex{color:var(--ink-soft);font-size:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.nc-side .card .ex{-webkit-line-clamp:2}
+.meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:14px;color:var(--muted);font-weight:700;margin-top:auto}
+.pill{display:inline-block;padding:3px 12px;border-radius:999px;border:2px solid var(--ink);background:var(--c,var(--lilac));color:#2A1B3D;font-weight:800;font-size:13px;white-space:nowrap}
+.nc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:28px}
+.nc-grid .card h3{font-size:21px}
+
+/* ===== Archive (Annapurna Express) ===== */
+.tools{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:28px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;flex:1}
+.chip{cursor:pointer;padding:8px 16px;border-radius:999px;border:2px solid var(--ink);background:var(--surface);font-weight:800;font-size:15px;transition:transform .15s,background .15s}
+.chip span{font-weight:600;opacity:.65;margin-left:4px}
+.chip:hover{transform:translateY(-2px)}
+.chip[aria-pressed="true"]{background:var(--c,var(--ink));color:#2A1B3D;box-shadow:3px 3px 0 var(--shadow)}
+.chip[data-t="all"][aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.search{position:relative;flex:0 1 280px}
+.search input{width:100%;padding:11px 16px 11px 42px;border-radius:999px;border:2px solid var(--ink);background:var(--surface)}
+.search svg{position:absolute;left:15px;top:50%;translate:0 -50%;width:18px;height:18px;color:var(--muted)}
+.ae-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mini{display:grid;grid-template-columns:88px 1fr;gap:14px;align-items:center;padding:12px;border-radius:22px;box-shadow:4px 4px 0 var(--shadow)}
+a.mini:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--shadow)}
+.mini .thumb{width:88px;height:88px;border-radius:18px;border:2px solid var(--ink);overflow:hidden;background:var(--c,var(--lilac))}
+.mini .thumb img{width:100%;height:100%;object-fit:cover}
+.mini h4{font-size:16.5px;font-weight:700;line-height:1.2;letter-spacing:-.01em;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.mini .meta{margin-top:8px;font-size:13px;gap:8px}
+.mini .pill{font-size:11.5px;padding:1px 9px}
+.empty{grid-column:1/-1;text-align:center;padding:48px 16px;color:var(--ink-soft);border:2.5px dashed var(--muted);border-radius:26px}
+.more-wrap{display:flex;justify-content:center;margin-top:36px}
+.more{cursor:pointer;background:var(--marigold);color:#2A1B3D}
+.count{color:var(--muted);font-weight:700;text-align:center;margin-top:14px;font-size:15px}
+
+/* ===== Journey ===== */
+.journey{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:step}
+.step{padding:28px;position:relative}
+.step .dot{width:54px;height:54px;border-radius:50%;border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:22px;background:var(--c);color:#2A1B3D;margin-bottom:18px}
+.step .when{font-weight:800;color:var(--muted);font-size:15px}
+.step h3{font-size:26px;margin:4px 0 2px}
+.step .role{font-weight:700;color:var(--ink-soft)}
+.step p{color:var(--ink-soft);margin-top:12px;font-size:16px}
+.step.now{background:color-mix(in srgb,var(--mint) 22%,var(--surface))}
+.beats{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.beats .pill{font-size:15px;padding:6px 16px}
+
+/* ===== Contact ===== */
+.contact{margin:110px 0 40px;padding:64px 32px;text-align:center;background:var(--pink);border-radius:44px;position:relative;overflow:hidden;color:#2A1B3D}
+.contact h2{font-size:clamp(40px,6.5vw,80px);font-weight:800;position:relative}
+.contact p{font-size:19px;max-width:30em;margin:16px auto 32px;position:relative;font-weight:600}
+.contact .btns{justify-content:center;position:relative}
+.contact .addr2{position:relative;margin:6px auto 0;font-weight:700;font-size:16px}
+.contact .addr2 a{text-decoration:underline;text-underline-offset:3px}
+.contact .addr{margin:22px auto 0;font-family:var(--display);font-weight:700;font-size:clamp(18px,2.4vw,24px);user-select:all;overflow-wrap:anywhere}
+.contact button.btn{cursor:pointer;color:#2A1B3D}
+.contact .btn{background:#fff;border-color:#2A1B3D;box-shadow:5px 5px 0 #2A1B3D}
+.contact .btn.dark{background:#2A1B3D;color:#fff}
+.contact .c1,.contact .c2,.contact .c3{position:absolute;border-radius:50%;border:2.5px solid #2A1B3D}
+.contact .c1{width:220px;height:220px;background:var(--marigold);top:-90px;left:-60px}
+.contact .c2{width:140px;height:140px;background:var(--sky);bottom:-50px;right:6%}
+.contact .c3{width:60px;height:60px;background:var(--mint);top:30px;right:16%}
+footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px 0 40px;color:var(--muted);font-weight:700;font-size:15px}
+footer a:hover{color:var(--pink)}
+
+
+/* ===== Small details ===== */
+.deva{font-family:'Mukta',var(--body);font-weight:800;font-size:1.08em;line-height:1}
+.hero h1{isolation:isolate}
+.squig{position:relative;white-space:nowrap}
+.squig::after{content:"";position:absolute;left:2%;right:4%;bottom:.02em;height:.18em;z-index:-1;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 Q 12 1 22 7 T 42 7 T 62 7 T 82 7 T 102 7 T 118 6' fill='none' stroke='%23FFB627' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+.bub[data-topic]{cursor:pointer;font:inherit;font-family:var(--display);font-weight:700;line-height:1.05}
+.bub[data-topic]:hover,.bub[data-topic]:focus-visible{scale:1.08;rotate:-6deg;transition:scale .2s,rotate .2s}
+.card .pic img,.mini .thumb img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.card:hover .pic img,.mini:hover .thumb img{transform:scale(1.06)}
+.new{position:absolute;top:14px;left:14px;z-index:1;background:var(--marigold);color:#2A1B3D;border:2px solid #2A1B3D;border-radius:999px;padding:4px 12px;font-family:var(--display);font-weight:800;font-size:14px;transform:rotate(-6deg)}
+.polaroid{position:relative;transition:transform .35s cubic-bezier(.3,1.4,.5,1)}
+.polaroid:hover{transform:rotate(0) scale(1.02)}
+.tape{position:absolute;top:-14px;left:50%;width:110px;height:30px;translate:-50% 0;rotate:-4deg;background:color-mix(in srgb,var(--sky) 70%,transparent);border-left:2px dashed rgba(255,255,255,.6);border-right:2px dashed rgba(255,255,255,.6);z-index:1}
+.bunting{display:flex;justify-content:space-between;margin:-10px 0 18px;border-top:2px solid var(--muted);padding:0 2px;height:26px}
+.bunting i{width:24px;height:22px;clip-path:polygon(0 0,100% 0,50% 100%);background:var(--f);filter:drop-shadow(0 0 .6px rgba(42,27,61,.5))}
+.bunting i:nth-child(5n+1){--f:#3B82F6}.bunting i:nth-child(5n+2){--f:#FFFFFF}.bunting i:nth-child(5n+3){--f:#EF4444}.bunting i:nth-child(5n+4){--f:#22C55E}.bunting i:nth-child(5n){--f:#FACC15}
+.bunting i:nth-child(odd){translate:0 2px}
+.petal{position:fixed;width:10px;height:10px;border-radius:50%;pointer-events:none;z-index:60;animation:petal .8s ease-out forwards}
+@keyframes petal{to{transform:translate(var(--x),var(--y)) scale(.3);opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  .petal{display:none}
+  .card:hover .pic img,.mini:hover .thumb img{transform:none}
+  html{scroll-behavior:auto}
+  .blob,.bub{animation:none}
+  .bub{opacity:1;transform:none}
+  *{transition:none!important}
+}
+
+/* ===== Responsive ===== */
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr;padding:48px 0 72px}
+  .stage{max-width:440px;order:-1}
+  .nc-top{grid-template-columns:1fr}
+  .nc-grid,.ae-grid,.picks{grid-template-columns:1fr 1fr}
+  .picks .card:nth-child(3){display:none}
+  .journey{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr;gap:40px}
+  .polaroid{max-width:280px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .nav ul li.hide-sm{display:none}
+  .nav .bar{padding-left:14px}
+  .logo{font-size:17px}
+  .bub.b1{width:86px;height:86px;font-size:14px}
+  .bub.b2{width:74px;height:74px;font-size:13px}
+  .bub.b3{width:92px;height:92px;font-size:14px}
+  .bub.b4{width:78px;height:78px;font-size:13px}
+  section.block{padding-top:72px}
+  .nc-side .card{flex-direction:column}
+  .nc-side .card .pic{width:auto;aspect-ratio:16/10;border-right:none;border-bottom:2.5px solid var(--ink)}
+  .nc-grid,.ae-grid,.picks{grid-template-columns:1fr}
+  .picks .card:nth-child(3){display:flex}
+  .search{flex:1 1 100%}
+  .contact{padding:56px 20px;border-radius:32px}
+  .bunting i:nth-child(n+16){display:none}
+  .sticker{box-shadow:4px 4px 0 var(--shadow)}
+}
+</style>
+</head>
+<body>
+
+<header class="wrap nav">
+  <nav class="bar sticker" aria-label="Main">
+    <a class="logo" href="#top"><i aria-hidden="true"></i>Shreya Shrestha</a>
+    <ul>
+      <li class="hide-sm"><a href="#best">Best work</a></li>
+      <li class="hide-sm"><a href="#nepal-connect">Stories</a></li>
+      <li class="hide-sm"><a href="#archive">Archive</a></li>
+      <li class="hide-sm"><a href="#journey">About</a></li>
+      <li class="hide-sm"><a href="#contact">Contact</a></li>
+      <li><a class="cv-link" href="assets/Shreya-Shrestha-CV.pdf" download><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>CV</a></li>
+      <li><button class="theme-btn" id="themeBtn" type="button" aria-label="Switch light or dark mode">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div>
+      <span class="hello">Namaste from Bhaktapur!</span>
+      <h1>Shreya <span class="squig">Shrestha</span></h1>
+      <p class="intro">Journalist at <b>Nepal Connect</b>, formerly a correspondent at <b>The Annapurna Express</b>. I bring untold local stories from Nepal to a wider, global audience.</p>
+      <div class="btns">
+        <a class="btn pink sticker" href="#best">See my best work</a>
+        <a class="btn plain sticker" href="assets/Shreya-Shrestha-CV.pdf" download><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>Download CV</a>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+
+    <div class="stage" aria-hidden="false">
+      <div class="blob"><img src="assets/images/shreya.jpg" alt="Shreya Shrestha" width="900" height="900" fetchpriority="high"></div>
+      <button class="bub b1" type="button" data-topic="climate" title="See my flood &amp; climate stories">Floods &amp; climate</button>
+      <button class="bub b2" type="button" data-topic="politics" title="See my politics stories">Politics</button>
+      <button class="bub b3" type="button" data-topic="culture" title="See my culture stories">Festivals &amp; culture</button>
+      <button class="bub b4" type="button" data-topic="people" title="See my profiles">Profiles</button>
+      <span class="bub b5" aria-hidden="true"></span>
+      <span class="bub b6" aria-hidden="true"></span>
+    </div>
+  </section>
+
+  <!-- ===== Best work (change BEST in the script to pick different stories) ===== -->
+  <section class="block" id="best">
+    <div class="head">
+      <div>
+        <h2>Best work</h2>
+        <p>Three stories that show what I do: on-the-ground reporting, history and human rights.</p>
+      </div>
+    </div>
+    <div class="picks" id="picks"></div>
+  </section>
+
+  <!-- ===== Nepal Connect ===== -->
+  <section class="block" id="nepal-connect">
+    <div class="head">
+      <div>
+        <h2>New at Nepal Connect</h2>
+        <p>Reports and features I've written since joining Nepal Connect in August 2026.</p>
+      </div>
+      <a class="outlet sticker" href="https://nepalconnect.world/author/shreya-shrestha" target="_blank" rel="noopener">See my author page ↗</a>
+    </div>
+    <div class="nc-top" id="ncTop"></div>
+    <div class="nc-grid" id="ncGrid"></div>
+  </section>
+
+  <!-- ===== Annapurna Express archive ===== -->
+  <section class="block" id="archive">
+    <div class="head">
+      <div>
+        <h2>The Annapurna Express years</h2>
+        <p>Every story I filed as a correspondent, from 2024 to 2026. Pick a topic or search by title.</p>
+      </div>
+      <a class="outlet sticker" href="https://theannapurnaexpress.com/author/877/" target="_blank" rel="noopener">See my author page ↗</a>
+    </div>
+    <div class="tools">
+      <div class="chips" id="chips" role="group" aria-label="Filter by topic"></div>
+      <label class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search stories" aria-label="Search stories">
+      </label>
+    </div>
+    <div class="ae-grid" id="aeGrid" aria-live="polite"></div>
+    <div class="more-wrap"><button class="btn more sticker" id="moreBtn" type="button">Show more stories</button></div>
+    <p class="count" id="count"></p>
+  </section>
+
+  <!-- ===== Journey ===== -->
+  <section class="block" id="journey">
+    <div class="about">
+      <figure class="polaroid"><span class="tape" aria-hidden="true"></span>
+        <img src="assets/images/shreya-temple.jpg" alt="Shreya Shrestha standing in front of a pagoda-style temple" loading="lazy">
+        <figcaption>Off duty</figcaption>
+      </figure>
+      <div>
+        <h2>About me</h2>
+        <p>I came to journalism because I loved writing. Today I see it as a way to bring untold stories to light.</p>
+        <p>I'm most interested in investigating issues and taking local stories to a wider, global audience. Training programmes and fellowships have sharpened my reporting along the way.</p>
+      </div>
+    </div>
+    <h3 class="sub">Experience</h3>
+    <div class="journey">
+      <div class="step sticker" style="--c:var(--sky)">
+        <div class="dot">1</div>
+        <span class="when">July 2024 – July 2026</span>
+        <h3>The Annapurna Express</h3>
+        <p class="role">News correspondent</p>
+        <p>Reported news, features, profiles and interviews, covering monsoon disasters, the 2026 elections, festivals and social issues. Also translated and copy edited.</p>
+      </div>
+      <div class="step sticker now" style="--c:var(--mint)">
+        <div class="dot">2</div>
+        <span class="when">August 2026 – now</span>
+        <h3>Nepal Connect</h3>
+        <p class="role">Journalist</p>
+        <p>Writes long-form reports and features on human rights, development, disasters, heritage and culture for an international readership.</p>
+      </div>
+      <div class="step sticker" style="--c:var(--marigold)">
+        <div class="dot">✎</div>
+        <span class="when">In progress</span>
+        <h3>BA in Journalism &amp; English Literature</h3>
+        <p class="role">Third year</p>
+        <p>Studying journalism and English literature while working full time in the newsroom.</p>
+      </div>
+    </div>
+    <div class="beats" aria-label="What I can do">
+      <span class="pill" style="--c:var(--pink)">Field reporting</span>
+      <span class="pill" style="--c:var(--marigold)">Interviews &amp; profiles</span>
+      <span class="pill" style="--c:var(--sky)">Long-form features</span>
+      <span class="pill" style="--c:var(--mint)">Breaking news</span>
+      <span class="pill" style="--c:var(--lilac)">Copy editing</span>
+      <span class="pill" style="--c:var(--tomato)">Nepali–English translation</span>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact" id="contact">
+    <span class="c1" aria-hidden="true"></span><span class="c2" aria-hidden="true"></span><span class="c3" aria-hidden="true"></span>
+    <h2>Got a story idea?</h2>
+    <p>I'm open to reporting assignments, writing commissions and editorial collaborations.</p>
+    <div class="btns">
+      <a class="btn dark sticker" href="mailto:shreyastha421@gmail.com">Email me</a>
+      <a class="btn sticker" href="assets/Shreya-Shrestha-CV.pdf" download><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>Download CV</a>
+      <button class="btn sticker" type="button" id="copyBtn">Copy email address</button>
+      <a class="btn sticker" href="https://www.linkedin.com/in/shreya-shrestha-7118722b6/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <!-- To add Instagram later, copy the LinkedIn line above and change the link and label. -->
+    </div>
+    <p class="addr">shreyastha421@gmail.com</p>
+    <p class="addr2">Work: <a href="mailto:shreya.shrestha@nepalconnect.world">shreya.shrestha@nepalconnect.world</a></p>
+  </section>
+
+  <div class="bunting" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <footer>
+    <span>© <span id="yr">2026</span> Shreya Shrestha · <span id="clock">Bhaktapur, Nepal</span></span>
+    <span id="updated"></span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</main>
+
+<!-- All story data lives here. Refresh it with: python scripts/update_stories.py -->
+<script src="assets/stories.js"></script>
+<script>
+(() => {
+  const D = window.STORIES || {nc:[], ae:[]};
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const fmt = iso => { if(!iso) return ''; const d = new Date(iso + 'T00:00:00');
+    return d.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'}); };
+
+  // ---- Topics: each story gets one, based on words in its title/summary ----
+  // Checked in this order against the story title; first match wins.
+  // To fix a story's topic, add a word from its title to the right list.
+  const TOPICS = [
+    {id:'people',   name:'Profiles',            c:'var(--pink)',     re:/^(Yalena|Sujan|Rabindra|Ram Kishan|Susan Sapkota|Sabin|Rajani|Tejeswor|Subhankar|Amazumi|Comedian|Rajan Thapa|Balkrishna|Dipak|Sheroes)|obituary/i},
+    {id:'climate',  name:'Floods & climate',    c:'var(--sky)',      re:/flood|monsoon|quake|disaster|forest fire|air crisis|air pollution|choking air|plastic|peaks?\b|rains|cholera|dengue|mosquito|climate/i},
+    {id:'politics', name:'Politics',            c:'var(--lilac)',    re:/balen|minister|\buml\b|election|\bevm\b|vote|\brsp\b|nmkp|prime minister|inmates|defeat/i},
+    {id:'health',   name:'Health & rights',     c:'var(--mint)',     re:/health|aids|disabilit|sex workers|murder|women|mothers|fathers|children|settlement|bulldozed|safety washed|wagging tails|insurance|bottled/i},
+    {id:'culture',  name:'Culture & lifestyle', c:'var(--marigold)', re:/dashain|tihar|teej|diyos|bagh chal|tradition|kathak|dhrupad|jazz|music|korean|happiness|open spaces|artistry|singer|miss universe|café|cafe|lounge|dusit|festival/i},
+  ];
+  const OTHER = {id:'society', name:'Society & economy', c:'var(--tomato)'};
+  const topicOf = s => TOPICS.find(t => t.re.test(s.title)) || OTHER;
+  const ALL_TOPICS = [...TOPICS, OTHER];
+  D.ae.forEach(s => s.topic = topicOf(s));
+
+  // NC topic: use the first tag Nepal Connect gave it
+  const ncColor = i => ['var(--pink)','var(--marigold)','var(--sky)','var(--mint)','var(--lilac)','var(--tomato)'][i % 6];
+  const imgTag = (src, alt) => src ? `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.remove()">` : '';
+
+  // ---- Stats ----
+  const total = D.nc.length + D.ae.length;
+  const first = [...D.ae, ...D.nc].map(s => s.date).filter(Boolean).sort()[0] || '2024';
+  $('#stats').innerHTML =
+    `<span class="stat"><b>${total}</b> published stories</span>
+     <span class="stat"><b>2</b> newsrooms</span>
+     <span class="stat"><b>${first.slice(0,4)}</b> first byline</span>`;
+
+  // ---- Nepal Connect ----
+  const isNew = s => (Date.now() - new Date(s.date + 'T00:00:00')) / 864e5 <= 14;
+  const ncCard = (s, i, cls='') => `
+    <a class="card sticker ${cls}" href="${esc(s.url)}" target="_blank" rel="noopener" style="--c:${ncColor(i)}">
+      <div class="pic">${isNew(s) ? '<span class="new">New!</span>' : ''}${imgTag(s.img, '')}</div>
+      <div class="txt">
+        <h3>${esc(s.title)}</h3>
+        <p class="ex">${esc(s.excerpt)}</p>
+        <div class="meta"><span class="pill">${esc((s.tags && s.tags[0]) || s.section)}</span>${fmt(s.date)} · ${s.type === 'feature' ? 'Feature' : 'Report'}</div>
+      </div>
+    </a>`;
+  const nc = [...D.nc].sort((a,b) => b.date.localeCompare(a.date));
+  $('#ncTop').innerHTML = nc[0] ? ncCard(nc[0], 0, 'lead') + `<div class="nc-side">${nc.slice(1,3).map((s,i) => ncCard(s, i+1)).join('')}</div>` : '';
+  $('#ncGrid').innerHTML = nc.slice(3).map((s,i) => ncCard(s, i+3)).join('');
+
+  // ---- Best work: paste the start of each story's link ----
+  const BEST = [
+    'https://nepalconnect.world/article/a-promise-is-not-a-home',
+    'https://nepalconnect.world/article/nepal-made-peace-with-an-empire-on-this-rock-the-flood-took-it',
+    'https://theannapurnaexpress.com/story/64426/',
+  ];
+  const all = [...D.nc.map(x => ({...x, outlet:'Nepal Connect'})), ...D.ae.map(x => ({...x, outlet:'The Annapurna Express'}))];
+  const best = BEST.map(u => all.find(s => s.url.startsWith(u))).filter(Boolean);
+  $('#picks').innerHTML = best.map((s, i) => `
+    <a class="card sticker" href="${esc(s.url)}" target="_blank" rel="noopener" style="--c:${ncColor(i)}">
+      <div class="pic">${imgTag(s.img, '')}</div>
+      <div class="txt">
+        <span class="outlet-name">${s.outlet}</span>
+        <h3>${esc(s.title)}</h3>
+        <p class="ex">${esc(s.excerpt)}</p>
+        <div class="meta">${fmt(s.date)}</div>
+      </div>
+    </a>`).join('');
+
+  // ---- Annapurna Express archive ----
+  let topic = 'all', query = '', shown = 12;
+  const counts = id => D.ae.filter(s => id === 'all' || s.topic.id === id).length;
+  $('#chips').innerHTML = [{id:'all', name:'All stories', c:''}, ...ALL_TOPICS]
+    .filter(t => counts(t.id))
+    .map(t => `<button class="chip" type="button" data-t="${t.id}" aria-pressed="${t.id==='all'}" style="--c:${t.c}">${t.name}<span>${counts(t.id)}</span></button>`).join('');
+
+  const render = () => {
+    const q = query.trim().toLowerCase();
+    const list = D.ae.filter(s => (topic === 'all' || s.topic.id === topic) &&
+      (!q || (s.title + ' ' + s.excerpt).toLowerCase().includes(q)));
+    $('#aeGrid').innerHTML = list.length ? list.slice(0, shown).map(s => `
+      <a class="mini sticker" href="${esc(s.url)}" target="_blank" rel="noopener" style="--c:${s.topic.c}" title="${esc(s.excerpt)}">
+        <div class="thumb">${imgTag(s.img, '')}</div>
+        <div>
+          <h4>${esc(s.title)}</h4>
+          <div class="meta"><span class="pill">${s.topic.name}</span>${fmt(s.date)}</div>
+        </div>
+      </a>`).join('')
+      : `<p class="empty">No stories match “${esc(query)}”. Try another word, or pick All stories.</p>`;
+    const more = list.length > shown;
+    $('#moreBtn').hidden = !more;
+    $('#count').textContent = list.length ? `Showing ${Math.min(shown, list.length)} of ${list.length} stories` : '';
+  };
+  const setTopic = id => {
+    topic = id; shown = 12;
+    document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.t === id));
+    render();
+  };
+  $('#chips').addEventListener('click', e => { const b = e.target.closest('.chip'); if (b) setTopic(b.dataset.t); });
+  // Hero bubbles jump to the archive, already filtered
+  document.querySelectorAll('.bub[data-topic]').forEach(b => b.addEventListener('click', () => {
+    setTopic(b.dataset.topic); $('#archive').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  }));
+  $('#q').addEventListener('input', e => { query = e.target.value; shown = 12; render(); });
+  $('#moreBtn').addEventListener('click', () => { shown += 12; render(); });
+  render();
+
+  // ---- Copy email ----
+  $('#copyBtn').addEventListener('click', async e => {
+    const b = e.currentTarget;
+    try {
+      await navigator.clipboard.writeText('shreyastha421@gmail.com'); b.textContent = 'Email copied!';
+      const r = b.getBoundingClientRect(), cols = ['#FFB627','#FF7A59','#FF6FA5','#FFB627','#3CCB9B'];
+      for (let i = 0; i < 14; i++) {           // a little burst of marigold petals
+        const p = document.createElement('span'), a = Math.PI * 2 * i / 14, d = 50 + Math.random() * 40;
+        p.className = 'petal'; p.style.left = r.left + r.width / 2 + 'px'; p.style.top = r.top + r.height / 2 + 'px';
+        p.style.background = cols[i % 5]; p.style.setProperty('--x', Math.cos(a) * d + 'px'); p.style.setProperty('--y', Math.sin(a) * d + 'px');
+        document.body.appendChild(p); setTimeout(() => p.remove(), 900);
+      }
+    }
+    catch (err) { b.textContent = 'Select the address below to copy'; }
+    setTimeout(() => b.textContent = 'Copy email address', 2500);
+  });
+
+  // ---- Highlight the menu link for the section on screen ----
+  const navLinks = [...document.querySelectorAll('.nav ul a[href^="#"]')];
+  const sections = navLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
+    }), {rootMargin: '-45% 0px -50% 0px'});
+    sections.forEach(s => io.observe(s));
+  }
+
+  // ---- Local time in Bhaktapur ----
+  const tick = () => { try {
+    const t = new Date().toLocaleTimeString('en-US', {timeZone:'Asia/Kathmandu', hour:'numeric', minute:'2-digit'});
+    $('#clock').textContent = `It's ${t.toLowerCase()} in Bhaktapur`;
+  } catch(e) {} };
+  tick(); setInterval(tick, 30000);
+
+  console.log('%cNamaste! 👋', 'font:800 20px sans-serif;color:#FF6FA5');
+  console.log('Looking for a journalist? Write to shreyastha421@gmail.com');
+
+  // ---- Footer ----
+  $('#yr').textContent = new Date().getFullYear();
+  if (D.updated) $('#updated').textContent = `Story list updated ${fmt(D.updated)}`;
+
+  // ---- Light / dark ----
+  const root = document.documentElement;
+  try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch(e) {}
+  $('#themeBtn').addEventListener('click', () => {
+    const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch(e) {}
+  });
+})();
+</script>
+</body>
+</html>

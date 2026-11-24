@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+.vercel
+
+assets/images/.tmp_data.json
+__pycache__/
